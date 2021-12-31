@@ -3,20 +3,19 @@
   <head>
     <meta name="description" content="HTML5 Audio Spectrum Visualizer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Audio API showcase | Audio visualizer</title>
+    <title>Audio spectrum visualizer</title>
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico">
   </head>
   <body>
-    <div>
-      <div>
-        <label for="uploadedFile">Drag&drop or select a file to play:</label>
+    <div class="container">
+      <canvas id='canvas' width="800" height="350"></canvas>
+      <div class="upload-container">
+        <label for="uploadedFile">Select a file to play:</label>
         <input type="file" id="uploadedFile"></input>
       </div>
-      <div>
+      <div class="audio-controll-container">
         <audio id="audioController" controls></audio>
-      </div>
-      <div>
-        <canvas id='canvas' width="800" height="350"></canvas>
       </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
