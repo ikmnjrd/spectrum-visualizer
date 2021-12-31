@@ -1,9 +1,15 @@
+## What is this
+Audio spectrum visualizer
 
-### ローカルサーバー起動
+### demo
+[https://ikmnjrd.github.io/spectrum-visualizer](https://ikmnjrd.github.io/spectrum-visualizer)
+
+
+### screenshot
+![スクリーンショット](./screenshot.png)
+
+### setup
 ```bash
 $ cd ./docs
 $ python -m SimpleHTTPServer 8080
 ```
-
-### デモ
-[https://ikmnjrd.github.io/spectrum-visualizer](https://ikmnjrd.github.io/spectrum-visualizer)
