@@ -1,0 +1,6 @@
+{
+  // エディター設定
+  "editor.codeLens": false,
+  "editor.wordWrap": "on", // 右端で折り返す
+  "editor.tabSize": 2,
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="HTML5 Audio Spectrum Visualizer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Audio API showcase | Audio visualizer</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <div>
+        <label for="uploadedFile">Drag&drop or select a file to play:</label>
+        <input type="file" id="uploadedFile"></input>
+      </div>
+      <div>
+        <audio id="audioController" controls></audio>
+      </div>
+      <div>
+        <canvas id='canvas' width="800" height="350"></canvas>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
