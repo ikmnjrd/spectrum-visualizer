@@ -1,0 +1,10 @@
+{
+  "main": "docs/script.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 8080"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  }
+}

@@ -7,17 +7,22 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <link rel="icon" href="/favicon.ico">
   </head>
-  <body>
+  <body ondrop="onDrop(event);" ondragover="onDragOver(event);">
     <div class="container">
       <canvas id='canvas'></canvas>
+      <canvas id='canvas_fq'></canvas>
       <div class="upload-container">
         <label for="uploadedFile">Select a file to play:</label>
-        <input type="file" id="uploadedFile"></input>
+        <input type="file" id="uploadedFile" onchange="onAddFile(event);"></input>
+      </div>
+      <div>
+        <button id="btn_play" onclick="play(true);">Connect Mic</button>
+        <button id="btn_stop" onclick="stop();" disabled="true">Stop</button>
       </div>
       <div class="audio-controll-container">
         <audio id="audioController" controls></audio>
       </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
